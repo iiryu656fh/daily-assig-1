@@ -12,7 +12,29 @@ public class PemilihanPercobaan214 {
         float tugas = input14.nextFloat();
         
         float total = (uas * 0.4F) + (uts * 0.3F) + (kuis * 0.1F) + (tugas * 0.2F);
-        String message = total < 65 ? "Remidi" : "Tidak remidi";
-        System.out.println("Nilai akhir = " + total + " sehingga " + message);
+        String huruf;
+        
+        if (total > 80) {
+            huruf = "A";
+        }
+        else if (total > 73) {
+            huruf = "B+";
+        }
+        else if (total > 65) {
+            huruf = "B";
+        }
+        else if (total > 60) {
+            huruf = "C+";
+        }
+        else if (total > 50) {
+            huruf = "C";
+    										}
+        else if (total > 39) {
+            huruf = "D";
+    									}
+        else 
+            huruf = "E";
+            
+        System.out.println("Nilai akhir = " + total + " sehingga mendapatkan predikat nilai " + huruf);
     }
 }
