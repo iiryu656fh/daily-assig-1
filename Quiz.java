@@ -13,7 +13,17 @@ public class Quiz {
                 System.out.print("Tebak angka (1-10): ");
                 int answer = input.nextInt();
                 input.nextLine();
-                success = (answer == number);
+                
+                if (answer < number) {
+                    System.out.print("Tebakkan anda lebih kecil dari jawaban, silakan coba lagi.");
+                }
+                else if (answer > number) {
+                    System.out.print("Tebakan anda lebih besar dari jawaban, silakan coba lagi.");
+                }
+                else {
+                    success = (answer == number);
+                    System.out.println("Benar!");
+                }
             } while (!success);
             System.out.print("Apakah anda ingin mengulang permainan? (y/Y): ");
             menu = input.nextLine().charAt(0);
