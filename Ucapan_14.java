@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Ucapan_14 {
     public static String PenerimaUcapan(){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Tuliskan NAMA orang yang ingin anda berikan ucapan: ");
+        System.out.println("Tuliskan NAMA orang yang ingin anda berikan ucapan: ");
         String namaOrang = sc.nextLine();
         sc.close();
         return namaOrang;
