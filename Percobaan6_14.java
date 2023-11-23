@@ -1,5 +1,16 @@
 import java.util.Scanner;
 public class Percobaan6_14 {
+    // fungsi hitungLuas
+    static int hitungLuas (int pjg, int lbr) {
+        int Luas = pjg*lbr;
+        return Luas;
+    }
+    // fungsi hitungVolume
+    static int hitungVolume (int tinggi, int a, int b) {
+        int Volume = hitungLuas(a,b)*tinggi;
+        return Volume;
+    }
+    // fungsi main
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
@@ -12,10 +23,10 @@ public class Percobaan6_14 {
         System.out.println("Masukkan tinggi");
         t = input.nextInt();
         
-        L=p*l;
+        L = hitungLuas(p,l);
         System.out.println("Luas persegi panjang adalah "+L);
         
-        vol=p*l*t;
+        vol = hitungVolume(t,p,l);
         System.out.println("Volume persegi panjang adalah "+vol);
         
     }
