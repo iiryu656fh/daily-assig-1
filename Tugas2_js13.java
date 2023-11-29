@@ -22,7 +22,7 @@ public class Tugas2_js13 {
     }
     //fungsi input nilai mahasiswa
     static int[][] inputNilai(Scanner input, int jumlahMahasiswa, int jumlahTugas) {
-        int[][] nilai = new int[5][7];
+        int[][] nilai = new int[jumlahMahasiswa][jumlahTugas];
         for (int i = 0; i < jumlahMahasiswa; i++) {
             System.out.println("Masukkan nilai Mahasiswa ke-"+(i+1)+": ");
             for (int j =0; j < jumlahMahasiswa; j++) {
